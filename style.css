@@ -1,16 +1,21 @@
 body {
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: thin;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    color: #C67AFF;
 }
+
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 6px;
-    border-style: double;
+
+    border: 40px solid transparent;
+    padding: 20px;
+    border-image-source: url(border-round.png);
+    border-image-repeat: round;
+    border-image-slice: 40;
 }
 
 #bio_pic {
@@ -21,32 +26,44 @@ body {
 
 #text1 {
     box-sizing: border-box;
-    border-radius: 2px;
-    border-style: double;
+    /* border-radius: 2px;
+    border-style: solid; */
+    color: #C67AFF;
     padding: 0px 10px;
     overflow: hidden; 
 }
 
 h1 {
-    text-align: center;
     margin-bottom: 20px;
+    padding: 0px 10px;
+    overflow: hidden; 
+    color: #fd4444;
 }
+
+h2 {
+    margin-top: 40px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
 }
 li {
     margin-bottom: 20px;
+    border-top: solid;
 }
+
 a {
     text-decoration: none;
-    color: #333;
+    color: orange;
     font-weight: bold;
 }
+
 .textbox {
-    border-radius: 2px;
-    border-style: double;
-    padding: 10px;
+    /* border-radius: 2px;
+    border-style: solid;
+    border-color: white; */
+    padding: 0px;
     width: 100%;
     box-sizing: border-box;
 }
